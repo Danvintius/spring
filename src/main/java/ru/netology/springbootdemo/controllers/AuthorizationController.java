@@ -3,12 +3,13 @@ package ru.netology.springbootdemo.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.netology.springbootdemo.profiles.Authorities;
+import ru.netology.springbootdemo.domain.Authorities;
+import ru.netology.springbootdemo.service.AuthorizationService;
 
 import java.util.List;
 
 @RestController
-public class AuthorizationConroller {
+public class AuthorizationController {
     AuthorizationService service;
 
     @GetMapping("/authorize")

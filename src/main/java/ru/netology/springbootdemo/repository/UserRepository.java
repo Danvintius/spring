@@ -1,6 +1,6 @@
-package ru.netology.springbootdemo.controllers;
+package ru.netology.springbootdemo.repository;
 
-import ru.netology.springbootdemo.controllers.Authorities;
+import ru.netology.springbootdemo.domain.Authorities;
 
 import java.util.ArrayList;
 import java.util.List;

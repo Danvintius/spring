@@ -1,11 +1,16 @@
-package ru.netology.springbootdemo.controllers;
+package ru.netology.springbootdemo.service;
+
+import ru.netology.springbootdemo.domain.Authorities;
+import ru.netology.springbootdemo.exception.InvalidCredentials;
+import ru.netology.springbootdemo.exception.UnauthorizedUser;
+import ru.netology.springbootdemo.repository.UserRepository;
 
 import java.util.List;
 
 public class AuthorizationService {
     UserRepository userRepository;
 
-    List<Authorities> getAuthorities(String user, String password) {
+    public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {
             throw new InvalidCredentials("User name or password is empty");
         }

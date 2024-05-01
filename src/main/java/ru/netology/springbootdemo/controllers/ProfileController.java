@@ -3,7 +3,12 @@ package ru.netology.springbootdemo.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.netology.springbootdemo.profiles.*;
+import ru.netology.springbootdemo.exception.InvalidCredentials;
+import ru.netology.springbootdemo.exception.UnauthorizedUser;
+import ru.netology.springbootdemo.domain.*;
+import ru.netology.springbootdemo.repository.UserRepository;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/")

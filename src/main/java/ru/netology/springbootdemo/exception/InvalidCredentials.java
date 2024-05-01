@@ -1,4 +1,4 @@
-package ru.netology.springbootdemo.controllers;
+package ru.netology.springbootdemo.exception;
 
 public class InvalidCredentials extends RuntimeException {
     public InvalidCredentials(String msg) {
