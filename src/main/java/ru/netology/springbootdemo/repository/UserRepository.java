@@ -1,5 +1,6 @@
 package ru.netology.springbootdemo.repository;
 
+import org.springframework.stereotype.Repository;
 import ru.netology.springbootdemo.domain.Authorities;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Repository
 public class UserRepository {
     public List<Authorities> getUserAuthorities(String user, String password) {
         List<Authorities> list = new ArrayList<>();
