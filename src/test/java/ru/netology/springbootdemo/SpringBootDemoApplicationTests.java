@@ -24,6 +24,8 @@ class SpringBootDemoApplicationTests {
     void contextLoads() {
         ResponseEntity<String> forEntity = restTemplate.getForEntity("http://localhost:" + myapp.getMappedPort(8080), String.class);
         System.out.println(forEntity.getBody());
+        myapp.getMappedPort(8081);
+        myapp2.getMappedPort(8082);
     }
 
 }
