@@ -27,5 +27,4 @@ class SpringBootDemoApplicationTests {
         myapp.getMappedPort(8081);
         myapp2.getMappedPort(8082);
     }
-
 }
